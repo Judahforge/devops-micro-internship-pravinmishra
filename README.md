@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
+| **Name** | Oykunle Judah Marvellous |
+| **LinkedIn** | [Judah Oyekunle](www.linkedin.com/in/judah-oyekunle-devops-engineer) |
+| **Location** | Lagos Nigeria |
 | **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Goal** | Become a senior DevOps Engineer & train DevOps professionals |
 
 ---
 
@@ -69,8 +69,8 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 00 → Internet & Networking Basics -->
 <!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
 
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+ Week 01 → Success Mindset
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
@@ -133,7 +133,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset |  ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
