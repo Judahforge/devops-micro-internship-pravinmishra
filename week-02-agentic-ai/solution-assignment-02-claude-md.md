@@ -22,7 +22,7 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 Add your screenshot here.
 
----
+![No claude.md](./screenshots/no%20claude.md%20re.png)
 
 # Task 2 — Generate the First Draft with /init
 
@@ -36,7 +36,7 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 Add your screenshot here.
 
----
+![/init](./screenshots/init.png)
 
 # Task 3 — Customize the CLAUDE.md
 
@@ -50,7 +50,9 @@ Update the generated `CLAUDE.md` file by adding project-specific instructions ac
 
 Add your screenshot here.
 
----
+![claude.md update 1](./screenshots/claude.md1.png)
+![claude.md update 2](./screenshots/claude.md2.png)
+![claude.md update 3](./screenshots/claude.md3.png)
 
 # Task 4 — Test the After State
 
@@ -64,13 +66,13 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 Add your screenshot here.
 
----
+![claude.md update response](./screenshots/claude.md%20upr1.png)
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
 Add your screenshot here.
 
----
+![warning against adding React](./screenshots/claude%20restrict.png)
 
 # Task 5 — Commit and push your changes to your fork in GitHub
 
@@ -84,7 +86,7 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 Add your screenshot here.
 
----
+![claude.md visible in your GitHub repository](./screenshots/claude%20in%20git.png)
 
 # Submission Instructions
 
@@ -98,7 +100,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git`
 
 ---
 
