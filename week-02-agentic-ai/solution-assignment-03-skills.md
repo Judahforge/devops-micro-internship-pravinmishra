@@ -90,13 +90,13 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+'(https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git)`
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git`
 ---
 
 # Completion Checklist
