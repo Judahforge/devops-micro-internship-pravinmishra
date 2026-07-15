@@ -22,7 +22,7 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 Add your screenshot here.
 
----
+![node -v && npm -v](./screenshots/npmin.png)
 
 # Task 2 — Setup Environment (Nginx)
 
@@ -36,7 +36,7 @@ Install Nginx, start the service, and confirm it is running.
 
 Add your screenshot here.
 
----
+![systemctl status nginx --no-pager](./screenshots/systemctl%20status.png)
 
 # Task 3 — Clone React Application
 
@@ -50,7 +50,7 @@ Clone the project repository and verify the project files are present.
 
 Add your screenshot here.
 
----
+![Output of `ls`](./screenshots/Output%20of%20ls.png)
 
 # Task 4 — Modify Application (Personalization)
 
@@ -64,7 +64,7 @@ Update `App.js` with your full name and the current date.
 
 Add your screenshot here.
 
----
+![nano App.js](./screenshots/appjs.png)
 
 # Task 5 — Build React Application
 
@@ -78,7 +78,7 @@ Install dependencies and generate the production build.
 
 Add your screenshot here.
 
----
+![build/` folder generated](./screenshots/build.png)
 
 # Task 6 — Deploy React Build to Nginx Web Root
 
@@ -92,7 +92,7 @@ Copy the production build files to the Nginx web root directory.
 
 Add your screenshot here.
 
----
+![the deployed build contents](./screenshots/content.png)
 
 # Task 7 — Configure Nginx for React Application
 
@@ -106,13 +106,13 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 Add your screenshot here.
 
----
+![systemctl is-active nginx](./screenshots/systemctl%20is-active%20nginx.png)
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
 Add your screenshot here.
 
----
+![catnginx/sites-available/default](./screenshots/cat-etc-nginx.png )
 
 # Task 8 — Test Deployment
 
@@ -126,13 +126,13 @@ Verify the React application is publicly accessible via the server's public IP.
 
 Add your screenshot here.
 
----
+![Output of `curl ifconfig.me](./screenshots/ipad.png)
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
 Add your screenshot here.
 
----
+![Browser showing the deployed React app at](./screenshots/web.png)
 
 # LinkedIn Post (Required)
 
@@ -142,7 +142,7 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-aws-share-7483059733067804672-QQMp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
 
 ---
 
@@ -150,7 +150,7 @@ Paste your LinkedIn post URL here:
 
 Add your screenshot here.
 
----
+![LinkedIn post](./screenshots/Screenshot%202026-07-15%20082955.png)
 
 # Submission Instructions
 
