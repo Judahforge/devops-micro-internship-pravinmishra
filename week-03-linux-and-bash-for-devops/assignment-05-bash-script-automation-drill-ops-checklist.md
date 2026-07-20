@@ -415,6 +415,7 @@ The script uses variables to store values, arrays to store tools, loops to displ
 Paste your LinkedIn post URL here:
 
 `https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-linux-bash-ugcPost-7483997560722944000-a1qW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
+`Add your URL here`
 
 ---
 

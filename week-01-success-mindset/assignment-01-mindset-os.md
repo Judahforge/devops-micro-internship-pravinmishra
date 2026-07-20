@@ -139,7 +139,7 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 
 Include this line:
 
-> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
 
 ## Your Article
 
@@ -174,7 +174,11 @@ Today, Oyekunle Judah Marvellous is recognized not only for building scalable cl
 
 Paste your link here:
 
+<<<<<<< HEAD
 (https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA)
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
@@ -388,7 +392,11 @@ I will read a personal development or technical book for 20 minutes every mornin
 
 Paste your LinkedIn post link here:
 
+<<<<<<< HEAD
 `(https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA)`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

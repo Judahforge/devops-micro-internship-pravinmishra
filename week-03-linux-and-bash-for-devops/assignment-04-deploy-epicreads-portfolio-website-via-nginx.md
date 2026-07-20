@@ -121,6 +121,7 @@ Add your screenshot here.
 Paste your LinkedIn post URL here:
 
 `https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-aws-ec2-ugcPost-7483781881679876096-GtJW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
+`Add your URL here`
 
 ---
 

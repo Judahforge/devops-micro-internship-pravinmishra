@@ -379,7 +379,11 @@ Unused resources continue to incur charges and may also introduce unnecessary se
 
 Paste your LinkedIn post URL here:
 
+<<<<<<< HEAD
 `https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-aws-ugcPost-7483553448920236032-1o5s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
