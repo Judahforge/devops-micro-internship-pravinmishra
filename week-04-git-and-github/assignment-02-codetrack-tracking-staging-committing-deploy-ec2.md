@@ -142,19 +142,19 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 #### Screenshot 13 — Output of `systemctl status nginx --no-pager` showing Nginx `active (running)`
 
 Add your screenshot here.
-
+![systemctl status nginx --no-pager active](./screenshots/nginx-up.png)
 ---
 
 #### Screenshot 14 — Output of `curl -I http://localhost` showing `HTTP/1.1 200 OK`
 
 Add your screenshot here.
-
+![curl -I http://localhost](./screenshots/curl%20localhost.png)
 ---
 
 #### Screenshot 15 — Browser showing the CodeTrack site loaded at `http://<EC2_PUBLIC_IP>`, with your Full Name and Group Name visible
 
 Add your screenshot here.
-
+![Browser showing the CodeTrack site loaded](./screenshots/codetrack.png)
 ---
 
 # LinkedIn Post (Required)
@@ -166,13 +166,13 @@ Add your screenshot here.
 Paste your LinkedIn post URL here:
 
 `Add your URL here`
-
+https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-aws-ec2-ugcPost-7485812490338017280-9Mbc/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA
 ---
 
 #### Screenshot — LinkedIn post showing the deployed CodeTrack application
 
 Add your screenshot here.
-
+![LinkedIn post showing the deployed CodeTrack application](./screenshots/Linkedin1.png)
 ---
 
 # Submission Instructions
