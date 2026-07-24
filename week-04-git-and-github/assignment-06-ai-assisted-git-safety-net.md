@@ -28,7 +28,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
 Add your screenshot here.
-
+![git remote -v and git branch showing the new branch](./screenshots/git-v5.png)
 ---
 
 ### Notes
@@ -36,7 +36,7 @@ Add your screenshot here.
 **1. Why create a dedicated branch instead of doing this work on main?**
 
 Add your answer here.
-
+A dedicated branch keeps the main branch stable while I work on new changes. It allows me to test, review, and fix issues without affecting the main codebase, making it easier to manage changes and create a Pull Request safely.
 ---
 
 # Task 1 — Stage a Change With Realistic Risk
@@ -50,7 +50,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
 Add your screenshot here.
-
+![git status` showing the staged file on feature/ai-pr-ready](./screenshots/gitstatus.png)
 ---
 
 ### Notes
@@ -58,7 +58,7 @@ Add your screenshot here.
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
 Add your answer here.
-
+A fake key allows us to safely test the security checks without exposing real credentials. It demonstrates how the pre-commit hook detects secrets while avoiding any security risk.
 ---
 
 # Task 2 — Write a Real Git Pre-Commit Hook
@@ -72,13 +72,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
 Add your screenshot here.
-
+![hooks/pre-commit](./screenshots/pre-commit.png)
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
 Add your screenshot here.
-
+![git config core.hooksPath` confirming it points to `hooks](./screenshots/git%20config%20core.hooksPath.png)
 ---
 
 ### Notes
@@ -86,13 +86,13 @@ Add your screenshot here.
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
 Add your answer here.
-
+Tracking the hook in the repository allows everyone working on the project to use the same hook. Files inside .git/hooks/ are only stored on one computer and are not shared through Git.
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
 Add your answer here.
-
+PreToolUse intercepts tool actions before Claude performs them, while the Git pre-commit hook intercepts commits before Git creates them. Both act as safety checks that prevent risky actions before they happen.
 ---
 
 # Task 3 — Prove the Hook Blocks the Risky Commit
@@ -106,7 +106,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
 Add your screenshot here.
-
+![git commit` rejected with the hook's "BLOCKED"](./screenshots/block.png)
 ---
 
 ### Notes
@@ -114,13 +114,13 @@ Add your screenshot here.
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
 Add your answer here.
-
+The line that searched for the AKIA pattern matched my fake key because it looked like the beginning of an AWS Access Key ID. The hook recognized the pattern and blocked the commit.
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
 Add your answer here.
-
+No. The hook only checks for patterns it has been programmed to detect. This shows that fixed-rule checks are useful, but they cannot identify every possible security issue.
 ---
 
 # Task 4 — Build the `/pr-ready` Skill
@@ -134,13 +134,13 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
 Add your screenshot here.
-
+![Skill.md](./screenshots/skill.png)
 ---
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
 Add your screenshot here.
-
+![/pr-ready` output](./screenshots/claude.png)
 ---
 
 ### Notes
@@ -148,13 +148,13 @@ Add your screenshot here.
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
 Add your answer here.
-
+It only needs permission to inspect the staged changes and generate a report. Without Write, it cannot modify files, create commits, or make changes automatically, which keeps the review process safe.
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
 Add your answer here.
-
+The pre-commit hook detected the fake secret based on fixed rules and blocked the commit. The /pr-ready skill also identified the debug statement and suggested improvements for the Pull Request, providing context that the hook could not.
 ---
 
 # Task 5 — Fix the Issues and Re-Verify
@@ -168,13 +168,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
 Add your screenshot here.
-
+![git commit` succeeding after the fix (no BLOCKED message)](./screenshots/git%20commit.png)
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
 Add your screenshot here.
-
+![/pr-ready` run showing a clean risk report](./screenshots/pr-ready.png)
 ---
 
 ### Notes
@@ -182,7 +182,7 @@ Add your screenshot here.
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
 Add your answer here.
-
+I removed the fake AWS key and deleted the debug statement from the file. After staging the updated file, the hook no longer detected any issues and allowed the commit.
 ---
 
 # Task 6 — Push and Open a Pull Request Using the AI Draft
