@@ -22,12 +22,13 @@ Create a `CodeTrack` project folder and initialize it as a Git repository.
 
 ![git init` inside `CodeTrack](./screenshots/gitinit.png)
 
+---
 
 #### Screenshot 2 — Output of `ls -a` showing the `.git` folder
 
-
 ![ls -a` showing the `.git` folder](./screenshots/ls-a.png)
 
+---
 
 ### Notes
 
@@ -49,9 +50,9 @@ Set your Git username and email for the `CodeTrack` repository only, using `git 
 
 #### Screenshot 3 — Output of `git config --local --list` showing your `user.name` and `user.email`
 
-
 ![git config --local --list` showing](./screenshots/gitID.png)
 
+---
 
 # Task 3 — Configure Git Identity Globally
 
@@ -63,9 +64,9 @@ Set a global Git username and email for this machine using `git config --global`
 
 #### Screenshot 4 — Output of `git config --global --list` showing your `user.name` and `user.email`
 
-
 ![git config --global --list` showing your](./screenshots/gitIDg.png)
 
+---
 
 # Submission Instructions
 
