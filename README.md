@@ -131,24 +131,11 @@ Week 04 → Git & GitHub
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-
-| 02 | Agentic AI with Claude Code |  🔄 In Progress | ⏳ Pending | — | — |
-| 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
-| 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
-| 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 | 01 | Success Mindset |  ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
 | 02 | Agentic AI with Claude Code | 🔄 In Progress | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
-| 04 | Git & GitHub | ✅ Completed | ✅ Solved | — | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-linux-bash-ugcPost-7483997560722944000-a1qW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
+`Add your URL here | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
