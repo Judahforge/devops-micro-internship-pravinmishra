@@ -196,15 +196,14 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 ### Evidence
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
-
 Add your screenshot here.
-
+![Pull Request showing the base repository](./screenshots/PR5.png)
 ---
 
 #### PR Link
 
 Add your PR URL here...
-
+https://github.com/Judahforge/devops-micro-internship-interviews/pull/1
 ---
 
 ### Notes
@@ -212,19 +211,19 @@ Add your PR URL here...
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
 Add your answer here.
-
+I reviewed the AI-generated draft and made small edits to improve the wording and ensure it accurately described the changes I made. This made the Pull Request clearer and more accurate.
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
 Add your answer here.
-
+The draft could contain incorrect or incomplete information. Reviewing it helps ensure the Pull Request accurately reflects the work completed and avoids misleading reviewers.
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
 Add your answer here.
-
+This assignment is for practice, so the changes belong in my own fork. Opening the Pull Request against my fork prevents practice files from being submitted to the shared class repository.
 ---
 
 # Task 7 — Map the Workflow to the Agentic Loop
@@ -238,31 +237,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 **1. Which step(s) represent Gather?**
 
 Add your answer here.
-
+The pre-commit hook and the /pr-ready skill gathering information from the staged files and Git diff represent the Gather step.
 ---
 
 **2. Which step(s) represent Analyze?**
 
 Add your answer here.
-
+The hook analyzes the staged files for secrets and large files, while /pr-ready analyzes the changes to identify possible risks and generate a Pull Request draft.
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
 Add your answer here.
-
+The Human Act step is when I review the results, fix any problems, commit the changes, push the branch, and create the Pull Request. These actions require human approval because they affect the repository and should not be performed automatically by AI.
 ---
 
 **4. Which step is Verify?**
 
 Add your answer here.
-
+Verify happens when I rerun the pre-commit hook and /pr-ready after fixing the issues to confirm that everything passes successfully before opening the Pull Request.
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
 Add your answer here.
-
+The pre-commit hook quickly catches known problems using fixed rules, while the AI skill provides context-aware feedback and suggestions that rules cannot. Together, they create a stronger and more reliable review process.
 ---
 
 # Task 8 — LinkedIn Post
@@ -276,16 +275,18 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 #### LinkedIn Post URL
 
 Add your LinkedIn post URL here...
-
+https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-git-githooks-ugcPost-7486693636370362368--4r4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA
 ---
 
 ## Key Learnings
 
 Add 3-5 bullet points on what you learned this week.
 
--
--
--
+Learned how Git pre-commit hooks prevent risky commits before they are created.
+Built a restricted AI skill that reviews staged changes without modifying the repository.
+Understood the difference between rule-based security checks and AI-assisted code review.
+Practiced using feature branches and Pull Requests in a professional Git workflow.
+Applied the Gather → Analyze → Human Act → Verify workflow to a real development task.
 
 ---
 
@@ -305,7 +306,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+`https://github.com/Judahforge/devops-micro-internship-interviews`
 
 ---
 
