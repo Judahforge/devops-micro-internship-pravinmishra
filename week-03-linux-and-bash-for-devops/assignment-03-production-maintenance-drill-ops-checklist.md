@@ -20,27 +20,27 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
-
 ![Browser showing the deployed React app at](./screenshots/web.png)
+
+---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
-
 ![ip a](./screenshots/ipa.png)
+
+---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
-
 ![sudo ss -tulpen](./screenshots/tulpen.png)
+
+---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
-
 ![sudo ufw status](./screenshots/sudo%20ufw%20status.png)
+
+---
 
 ### Notes
 
@@ -48,19 +48,17 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+
 The output of the ss -tulpen command also indicates that nginx is listening on 0.0.0.0:80, which is the web server port.
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
 The ss -tulpen command makes sure that port 22 is open and thus the server is accessible
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
 
 No. Only the expected ports for SSH and Nginx were open, which reduces unnecessary security risks.
 
@@ -74,20 +72,20 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
 ![systemctl status nginx --no-pager](./screenshots/systemctl%20status%20nginx%20--no-pager.png)
+
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
 ![sudo nginx -t](./screenshots/sudo%20nginx%20-t.png)
+
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
 ![sudo ss -lptn '( sport = :80 )'](./screenshots/sudo%20ss%20-lptn%20.png)
+
 ---
 
 ### Notes
@@ -96,13 +94,11 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
 If Nginx fails to restart, users won't be able to access the website, causing downtime until the issue is fixed
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
 I would restore the previous working Nginx configuration, test it with nginx -t, then restart the service to bring the website back online.
 ---
 
@@ -116,20 +112,20 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
 ![sudo tail -n 30 /var/log/nginx/access.log](./screenshots/sudo%20tail%20access.log.png)
+
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
 ![sudo tail -n 30 /var/log/nginx/error.log](./screenshots/sudo%20tail%20-n%2030error.log.png)
+
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
 ![systemctl status nginx --no-pager](./screenshots/sudo%20journalctl%20-u%20nginx%20--no-pager%20-n%2050.png)
+
 ---
 
 ### Notes
@@ -141,19 +137,17 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+
 No recent errors were found. This means Nginx handled requests successfully during the check
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
 It indicates the web server is working properly and there are no recent configuration or runtime problems.
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
 Yes. The curl requests appeared in the access log, proving that requests reached the server and Nginx processed them successfully.
 ---
 
@@ -167,26 +161,26 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
 ![uptime output](./screenshots/uptime.png)
+
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
 ![free -h](./screenshots/free%20-h.png)
+
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
 ![df -h](./screenshots/df%20-h.png)
+
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
 ![sudo du -sh /var/* | sort -h](./screenshots/sudo%20sort%20-h.png)
+
 ---
 
 ### Notes
@@ -195,13 +189,11 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
 Disk usage is the most important resource to monitor because if it becomes full, the server may stop writing logs or application files.
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
 Applications may stop working, logs cannot be written, updates may fail, and the server could become unstable.
 ---
 
@@ -215,20 +207,20 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
 ![ls -lah /var/www/html | head -n 20](./screenshots/ls%20head%20-n%2020.png)
+
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
 ![Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head](./screenshots/grep%20-R%20head.png)
+
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
 ![grep -n "try_files" /etc/nginx/sites-available/default](./screenshots/grepdefault.png)
+
 ---
 
 ### Notes
@@ -237,7 +229,6 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
 I confirm the deployment by checking the files inside /var/www/html, verifying the deployment marker if available, and ensuring the browser displays the latest version of the application.
 ---
 
@@ -251,20 +242,20 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
 ![sudo nginx -t](./screenshots/errosyn.png)
+
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
 ![sudo nginx -t](./screenshots/sudo%20nginx%20t.png)
+
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
 ![curl -I http://<public-ip>](./screenshots/ipadress.png)
+
 ---
 
 ### Notes
@@ -273,19 +264,16 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
 A syntax error was introduced into the Nginx configuration file, preventing Nginx from validating the configuration.
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
 I restored the correct configuration, verified it using nginx -t, and restarted the Nginx service.
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
 Always test configuration changes with nginx -t before restarting Nginx, and keep backups of working configuration files.
 ---
 
@@ -299,14 +287,14 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
 ![systemctl status nginx --no-pager](./screenshots/Wfail.png)
+
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
 ![confirming recovery](./screenshots/webok.png)
+
 ---
 
 ### Notes
@@ -315,19 +303,16 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
 The deployed website files were missing from the Nginx web root, so Nginx could not serve the application.
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
 I restored the original deployment files and restarted Nginx.
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
 Use deployment backups, version control, automated deployment pipelines, and avoid deleting production files directly.
 ---
 
@@ -343,31 +328,26 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
 SSH keys are much harder to guess or crack than passwords, making remote access more secure.
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
 Keeping only necessary ports open reduces the attack surface and helps protect the server from unauthorized access.
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
 If the server restarts, Nginx starts automatically, ensuring the website becomes available again without manual intervention.
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
 Attackers could gain unauthorized access to servers, cloud resources, or sensitive data, leading to security breaches and financial loss.
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
 Unused resources continue to incur charges and may also introduce unnecessary security risks if left running.
 ---
 
@@ -379,18 +359,14 @@ Unused resources continue to incur charges and may also introduce unnecessary se
 
 Paste your LinkedIn post URL here:
 
-<<<<<<< HEAD
 `https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-aws-ugcPost-7483553448920236032-1o5s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
-=======
-`Add your URL here`
->>>>>>> upstream/main
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
 ![Published LinkedIn post](./screenshots/LInkedi1.png)
+
 ---
 
 # Submission Instructions

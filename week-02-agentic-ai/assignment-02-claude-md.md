@@ -20,9 +20,9 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 #### Screenshot 1 — Claude’s generic response before CLAUDE.md exists (project contains only `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
 
-Add your screenshot here.
-
 ![No claude.md](./screenshots/no%20claude.md%20re.png)
+
+---
 
 # Task 2 — Generate the First Draft with /init
 
@@ -34,9 +34,9 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 #### Screenshot 2 — The auto-generated CLAUDE.md open in VS Code showing its content
 
-Add your screenshot here.
-
 ![/init](./screenshots/init.png)
+
+---
 
 # Task 3 — Customize the CLAUDE.md
 
@@ -48,12 +48,11 @@ Update the generated `CLAUDE.md` file by adding project-specific instructions ac
 
 #### Screenshot 3 — Your customized CLAUDE.md in VS Code showing all 5 sections (scroll to show the full file)
 
-Add your screenshot here.
-
 ![claude.md update 1](./screenshots/claude.md1.png)
 ![claude.md update 2](./screenshots/claude.md2.png)
 ![claude.md update 3](./screenshots/claude.md3.png)
 
+---
 # Task 4 — Test the After State
 
 ## Goal
@@ -64,15 +63,15 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 #### Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 
-Add your screenshot here.
-
 ![claude.md update response](./screenshots/claude.md%20upr1.png)
+
+---
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
-Add your screenshot here.
-
 ![warning against adding React](./screenshots/claude%20restrict.png)
+
+---
 
 # Task 5 — Commit and push your changes to your fork in GitHub
 
@@ -84,9 +83,9 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 #### Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
 
-Add your screenshot here.
-
 ![claude.md visible in your GitHub repository](./screenshots/claude%20in%20git.png)
+
+---
 
 # Submission Instructions
 
@@ -98,13 +97,7 @@ Add your screenshot here.
 
 ## GitHub Repository URL
 
-Paste your forked repository URL here:
-
-<<<<<<< HEAD
 `https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git`
-=======
-`Add your URL here`
->>>>>>> upstream/main
 
 ---
 
