@@ -35,7 +35,6 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
 A dedicated branch keeps the main branch stable while I work on new changes. It allows me to test, review, and fix issues without affecting the main codebase, making it easier to manage changes and create a Pull Request safely.
 ---
 
@@ -57,7 +56,6 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
 A fake key allows us to safely test the security checks without exposing real credentials. It demonstrates how the pre-commit hook detects secrets while avoiding any security risk.
 ---
 
@@ -85,13 +83,11 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
 Tracking the hook in the repository allows everyone working on the project to use the same hook. Files inside .git/hooks/ are only stored on one computer and are not shared through Git.
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
 PreToolUse intercepts tool actions before Claude performs them, while the Git pre-commit hook intercepts commits before Git creates them. Both act as safety checks that prevent risky actions before they happen.
 ---
 
@@ -113,13 +109,11 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
 The line that searched for the AKIA pattern matched my fake key because it looked like the beginning of an AWS Access Key ID. The hook recognized the pattern and blocked the commit.
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
 No. The hook only checks for patterns it has been programmed to detect. This shows that fixed-rule checks are useful, but they cannot identify every possible security issue.
 ---
 
@@ -147,13 +141,11 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
 It only needs permission to inspect the staged changes and generate a report. Without Write, it cannot modify files, create commits, or make changes automatically, which keeps the review process safe.
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
 The pre-commit hook detected the fake secret based on fixed rules and blocked the commit. The /pr-ready skill also identified the debug statement and suggested improvements for the Pull Request, providing context that the hook could not.
 ---
 
@@ -181,7 +173,6 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
 I removed the fake AWS key and deleted the debug statement from the file. After staging the updated file, the hook no longer detected any issues and allowed the commit.
 ---
 
@@ -210,19 +201,16 @@ https://github.com/Judahforge/devops-micro-internship-interviews/pull/1
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
 I reviewed the AI-generated draft and made small edits to improve the wording and ensure it accurately described the changes I made. This made the Pull Request clearer and more accurate.
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
 The draft could contain incorrect or incomplete information. Reviewing it helps ensure the Pull Request accurately reflects the work completed and avoids misleading reviewers.
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
 This assignment is for practice, so the changes belong in my own fork. Opening the Pull Request against my fork prevents practice files from being submitted to the shared class repository.
 ---
 
@@ -236,31 +224,26 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
 The pre-commit hook and the /pr-ready skill gathering information from the staged files and Git diff represent the Gather step.
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
 The hook analyzes the staged files for secrets and large files, while /pr-ready analyzes the changes to identify possible risks and generate a Pull Request draft.
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
 The Human Act step is when I review the results, fix any problems, commit the changes, push the branch, and create the Pull Request. These actions require human approval because they affect the repository and should not be performed automatically by AI.
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
 Verify happens when I rerun the pre-commit hook and /pr-ready after fixing the issues to confirm that everything passes successfully before opening the Pull Request.
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
 The pre-commit hook quickly catches known problems using fixed rules, while the AI skill provides context-aware feedback and suggestions that rules cannot. Together, they create a stronger and more reliable review process.
 ---
 
