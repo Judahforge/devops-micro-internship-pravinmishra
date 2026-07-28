@@ -78,9 +78,8 @@ Configure Claude Code permissions and connect the hook scripts created in the pr
 
 #### Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
 
-Add your screenshot here.
-
 Claude never actually invoked the Bash command terraform destroy -auto-approve
+
 
 # Task 6 — Test the UserPromptSubmit Hook
 
