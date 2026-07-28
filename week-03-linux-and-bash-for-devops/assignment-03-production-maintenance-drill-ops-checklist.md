@@ -48,7 +48,6 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-
 The output of the ss -tulpen command also indicates that nginx is listening on 0.0.0.0:80, which is the web server port.
 ---
 
