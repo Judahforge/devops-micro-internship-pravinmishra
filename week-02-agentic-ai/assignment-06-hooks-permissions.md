@@ -48,10 +48,9 @@ Create a hook that runs before Claude executes Bash commands and blocks dangerou
 
 #### Screenshot 3 — `pre-tool-guard.sh` open in VS Code showing the hook script
 
-Add your screenshot here.
+![pre-tool-guard.sh` open in VS Code showing the hook script](./screenshots/preusefile.png)
 
-![settings.json1](./screenshots/settings.json1.png)
-![settings.json1](./screenshots/settings.json2.png)
+---
 
 # Task 4 — Create the PostToolUse Hook Script
 
@@ -65,7 +64,9 @@ Create a hook that runs after Claude executes a Bash command and logs selected T
 
 Add your screenshot here.
 
-![ UserPromptSubmit hook](./screenshots/userp.png)
+![post-tool-logger.sh` open in VS Code showing the hook script](./screenshots/postuse%20file.png)
+
+---
 
 # Task 5 — Configure settings.json to Connect Hook Scripts
 
@@ -76,6 +77,9 @@ Configure Claude Code permissions and connect the hook scripts created in the pr
 ### Evidence
 
 #### Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
+![settings.json` open in VS Code](./screenshots/settings.json1.png)
+
+---
 
 Claude never actually invoked the Bash command terraform destroy -auto-approve
 
@@ -89,7 +93,7 @@ Prove the prompt-level hook works by typing a destructive prompt and verifying i
 ### Evidence
 
 #### Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
-
+![UserPromptSubmit hook blocking the destructive prompt](./screenshots/blockhook.pngng)
 ---
 
 # Task 7 — Test the PreToolUse Hook
@@ -101,6 +105,8 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 ### Evidence
 
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
+
+![PreToolUse hook blocking terraform destroy](./screenshots/block%20pretool.png)
 
 ---
 
@@ -114,7 +120,12 @@ Prove the logging hook runs after a successful command execution and records Ter
 
 #### Screenshot 8 — Claude running terraform validate successfully
 
+![systemctl status nginx --no-pager](./screenshots/Terraform%20validate.png)
+
+---
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
+
+![.claude/deploy.log` showing the logged command](./screenshots/deploy.png)
 
 ---
 
@@ -122,7 +133,6 @@ Prove the logging hook runs after a successful command execution and records Ter
 
 Complete all tasks in sequence.
 
-<<<<<<< HEAD
 ---
 
 ## GitHub Repository URL
