@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Blog published and visible](./screenshots/Blog.png)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+`https://medium.com/@oyekunlejude7/reflection-week-2-0e4ed13dba6a`
 
 ---
 
@@ -92,7 +92,7 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![systemctl status nginx --no-pager](./screenshots/Linked.png)
 
 ---
 
@@ -101,14 +101,47 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+Exploring the Future of DevOps with Agentic AI — Week 2 Reflection
+
+Another week of growth and hands-on learning during the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI.
+
+This week, I explored how AI assistants can be integrated into engineering workflows to improve productivity, automation, and collaboration.
+
+One of the highlights was setting up and working with Claude Code as an AI development assistant. Instead of using AI only for generating responses, I learned how to configure it to understand project context, follow instructions, and support more structured development workflows.
+
+During Week 2, I explored:
+
+✅ Installing and configuring Claude Code
+✅ Teaching Claude about project-specific requirements and context
+✅ Building reusable Skills and specialized AI workflows
+✅ Understanding Subagents and how AI teams can handle different responsibilities
+✅ Connecting Claude with external tools through MCP
+✅ Implementing safety controls through Hooks and Permissions
+✅ Using Memory to maintain project knowledge across sessions
+
+One of the biggest lessons I learned is that effective AI adoption requires more than just using powerful tools—it requires good systems, clear instructions, and responsible implementation.
+
+I also gained a deeper appreciation for the importance of safety and reliability when building AI-powered workflows. Automation can increase productivity, but proper controls and human decision-making remain essential.
+
+This week challenged me to think differently about the future of DevOps: not as replacing engineers, but as creating smarter workflows where humans and AI collaborate to solve problems more efficiently.
+
+I'm excited to continue exploring AI-assisted development, cloud engineering, automation, and DevOps practices while building more real-world projects.
+
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra.
+My graded progress is public: https://github.com/Judahforge/devops-micro-internship-pravinmishra
+
+Start your DevOps journey:
+https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
+
+#DMIByPravinMishra #DevOps #AgenticAI #ClaudeCode #AIEngineering #Automation #CloudComputing #AWS #GitHub #ContinuousLearning #LearningInPublic #OpenToWork
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-agenticai-ugcPost-7489078940402163712-8P2H/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA`
 
 ---
 
