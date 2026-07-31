@@ -139,7 +139,7 @@ Complete all tasks in sequence.
 
 Paste your forked repository URL here:
 
-`https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git
+`https://github.com/Judahforge/Ultimate-Agentic-DevOps-with-Claude-Code.git'
 ---
 
 # Completion Checklist
