@@ -15,7 +15,7 @@
 | | |
 |---|---|
 | **Name** | Oykunle Judah Marvellous |
-| **LinkedIn** | [Judah Oyekunle](www.linkedin.com/in/judah-oyekunle-devops-engineer) |
+| **LinkedIn** | (www.linkedin.com/in/judah-oyekunle-devops-engineer) |
 | **Location** | Lagos Nigeria |
 | **Background** | Cloud, DevOps & AI Consultant |
 | **Goal** | Become a senior DevOps Engineer & train DevOps professionals |
