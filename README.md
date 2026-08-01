@@ -67,14 +67,14 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+ Week 00 → Internet & Networking Basics
+ [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
 
  Week 01 → Success Mindset
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
 Week 02 → Agentic AI with Claude Code
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+[![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
 <!-- Week 03 → Linux & Bash for DevOps -->
 <!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
@@ -130,7 +130,7 @@ Week 04 → Git & GitHub
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved| https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-micro-internship-dmi-by-pravin-activity-7442203473045213184-eDpT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
 | 01 | Success Mindset |  ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/reflection-week-2-0e4ed13dba6a |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-agenticai-ugcPost-7489078940402163712-8P2H/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
 | 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
