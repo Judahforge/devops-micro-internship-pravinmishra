@@ -20,13 +20,13 @@ Generate an API token from your Atlassian account that the MCP server will use t
 
 #### Screenshot 1 — Jira API token creation confirmation page showing the token name, with the token value not visible
 
-Add your screenshot here.
+![Jira API token creation confirmation page](./screenshots/API-token.png)
 
 ### Notes You Must Write (Very Important):
 
 Why does the MCP server need your site URL and account email in addition to the token?
 
-Add your answer here
+Jira's REST API authenticates using Basic Auth, which requires a username (your email) and a secret (the API token) together — the token alone doesn't identify which Atlassian account it belongs to or which Jira site to connect to, since Atlassian hosts many separate instances (your-site.atlassian.net is yours specifically, distinct from anyone else's). The token proves "this really is you," the email says "on behalf of this specific account," and the URL says "talk to this specific Jira instance, not some other one
 
 ---
 
@@ -40,13 +40,13 @@ Create or update `.mcp.json` at your project root with a Jira MCP server block, 
 
 #### Screenshot 2 — `.mcp.json` open in VS Code showing the Jira server configuration
 
-Add your screenshot here.
+![.mcp.json` open in VS Code showing the Jira server configuration](./screenshots/mcp-file.png)
 
 ### Notes You Must Write (Very Important):
 
 Compare this jira block to the github block from Week 2 Assignment 5. The GitHub server ran via npx (a Node.js package); this one runs via uvx (a Python package) — what stays exactly the same shape despite that difference, and why doesn't Claude Code care which language a given MCP server is written in?
 
-Add your answer here
+The Jira and GitHub blocks keep the same basic MCP configuration structure: both define a server name, specify the command used to start the server, and provide the required arguments and environment variables. The main difference is that the GitHub server uses npx to run a Node.js package, while the Jira server uses uvx to run a Python package. Claude Code does not care which programming language the MCP server is written in because MCP provides a standardized communication interface. As long as the server follows the MCP protocol and exposes the expected tools and capabilities, Claude Code can communicate with it regardless of whether it was built with Python, JavaScript, or another supported language.
 
 ---
 
@@ -60,13 +60,13 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 #### Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section, with the actual token value blurred or covered
 
-Add your screenshot here.
+![settings.local.json` open in VS Code showing the `env` section](./screenshots/settings.local.png)
 
 ### Notes You Must Write (Very Important):
 
 Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
 
-Add your answer here
+JIRA_API_TOKEN must be stored in settings.local.json because it is a secret credential that should not be included in project configuration files that may be committed to Git. The .mcp.json file defines how the Jira MCP server runs, while settings.local.json provides the sensitive environment variable securely at runtime. Keeping the token in settings.local.json and adding that file to .gitignore helps prevent accidentally exposing the Jira account credentials in a public or shared repository.
 
 ---
 
@@ -80,7 +80,7 @@ Restart Claude Code and confirm the Jira MCP server shows as connected.
 
 #### Screenshot 4 — `/mcp` output showing `jira: connected`
 
-Add your screenshot here.
+![systemctl status nginx --no-pager](./screenshots/Jira-mcp-conected.png)
 
 ---
 
@@ -94,13 +94,13 @@ Ask Claude to list the issues in your current active sprint through the Jira MCP
 
 #### Screenshot 5 — Claude's response showing the live sprint issue list retrieved via Jira MCP
 
-Add your screenshot here.
+![Claude's response showing the live sprint issue list retrieved via Jira MCP](./screenshots/systemctl%20status.png)
 
 ### Notes You Must Write (Very Important):
 
 How did you confirm this was real board data and not something Claude guessed?
 
-Add your answer here
+I verified that the data was not hallucinated by checking the source of the response. Claude was connected to Jira through the Atlassian MCP server, which queried my live Jira instance through the Jira API. The returned sprint issues contained real Jira metadata such as issue keys, titles, statuses, and sprint details. I validated these results by comparing them with the issues displayed on my Jira board, confirming that Claude was retrieving live project data rather than generating an answer.
 
 ---
 
