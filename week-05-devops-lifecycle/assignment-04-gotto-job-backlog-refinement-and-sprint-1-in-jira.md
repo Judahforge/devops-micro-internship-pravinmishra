@@ -28,7 +28,13 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+PO: Prioritized UI improvements that would increase Gotto Job’s discoverability, trust, and overall user experience, focusing on the highest-value stories first.
+
+SM: Ensured the Scrum process was followed by refining and ranking the backlog, estimating story points, planning Sprint 1, tracking progress, and conducting a retrospective.
+
+Dev Lead: Built and implemented the selected UI-only improvement, breaking the work into Build, Verify, Deploy, and Screenshot sub-tasks.
+
+DevOps Lead: Committed the changes with Git, deployed the updated application to the EC2 server using Nginx, verified the live UI, and moved the completed Jira tasks to Done.
 
 ---
 
