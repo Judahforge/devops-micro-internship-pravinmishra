@@ -109,7 +109,7 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
-![A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP](./screenshots/systemctl%20status.png)
+![A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP](./screenshots/web-database.png)
 
 ---
 
@@ -123,13 +123,13 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![ALB details showing two public subnets in two Availability Zones](./screenshots/two-public-subnets.png)
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![Target group showing at least one healthy target](./screenshots/healthy.png)
 
 ---
 
