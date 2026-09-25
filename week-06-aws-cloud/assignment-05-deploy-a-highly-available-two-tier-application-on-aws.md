@@ -109,7 +109,7 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
-![A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP](./screenshots/web-database.png)
+![A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP](./screenshots/web-databasee.png)
 
 ---
 
@@ -129,7 +129,7 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-![Target group showing at least one healthy target](./screenshots/healthy.png)
+![Target group showing at least one healthy target](./screenshots/healthy..png)
 
 ---
 
@@ -143,13 +143,13 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones](./screenshots/Auto-%20scaling-1.png)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+![EC2 instances list showing two running instances in different Availability Zones](./screenshots/Auto-%20scaling-2..png)
 
 ---
 
@@ -163,13 +163,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![Browser showing the application loaded through the ALB DNS name with the URL visible](./screenshots/ALB.png)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![Proof of a database write through a UI message or database query output](./screenshots/ALB-WP.png)
 
 ---
 
@@ -185,25 +185,25 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+![EC2 showing the terminated instance and the newly launched instance; timestamps are helpful](./screenshots/test.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![Target group showing healthy targets after replacement](./screenshots/test2.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone](./screenshots/test1.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![Browser showing that the ALB DNS endpoint still works during the change](./screenshots/test3.png)
 
 ---
 
@@ -217,7 +217,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+![A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components](./screenshots/artitecture.png)
 
 ---
 
@@ -225,19 +225,19 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+The architecture was deployed in a VPC spanning two Availability Zones to provide high availability and fault tolerance. Each Availability Zone contains public and private subnets. The public subnets are used for internet-facing components such as the Application Load Balancer, while the private subnets are used for application and database resources. The design separates the web/application layer from the database layer and allows resources to continue operating if one Availability Zone becomes unavailable
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+An Application Load Balancer (ALB) was deployed across the two Availability Zones to distribute incoming HTTP traffic between the EC2 instances in the Auto Scaling Group. The Auto Scaling Group (ASG) manages the EC2 instances and maintains the required number of instances across the Availability Zones. The ALB uses target-group health checks to send traffic only to healthy instances. This setup provides load distribution, automatic replacement of unhealthy instances, and improved availability.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+The database layer uses Amazon RDS in a private subnet configuration across multiple Availability Zones. The RDS deployment is configured for Multi-AZ, providing a standby database instance in another Availability Zone for high availability. The database is not directly exposed to the public internet. Application servers communicate with the database through the private network, while the database security group restricts access to the required application resources.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+A database failover was tested on the Multi-AZ RDS deployment. RDS transferred database operations to the standby instance in the alternate Availability Zone. After the failover, the application continued communicating with the RDS endpoint without requiring the application to be reconfigured. This demonstrated the database layer's ability to provide availability during a database/AZ failure.
 
 ---
 
@@ -253,13 +253,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/dQVUFiWr`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![Screenshot of LinkedIn post](./screenshots/Linkedin.png)
 
 ---
 
