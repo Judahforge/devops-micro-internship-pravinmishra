@@ -20,49 +20,49 @@ Create a Docker Hub repository (`my-react-app`), log in from the CLI, tag and pu
 
 #### Screenshot 1 — Docker Hub repository (`my-react-app`)
 
-Add your screenshot here.
+![Docker Hub repository (`my-react-app`)](./screenshots/DH-repo.png)
 
 ---
 
 #### Screenshot 2 — Successful `docker login`
 
-Add your screenshot here.
+![Successful `docker login`](./screenshots/Docker-login.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker tag`
 
-Add your screenshot here.
+![Successful `docker tag`](./screenshots/tag.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker push`
 
-Add your screenshot here.
+![Successful `docker push`](./screenshots/Docker-push.png)
 
 ---
 
 #### Screenshot 5 — Docker Hub repository showing the uploaded image
 
-Add your screenshot here.
+![Docker Hub repository showing the uploaded image](./screenshots/docker-hub-web.png)
 
 ---
 
 #### Screenshot 6 — Successful `docker pull`
 
-Add your screenshot here.
+![Successful `docker pull`](./screenshots/DH-pull.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker ps`
 
-Add your screenshot here.
+![Output of `docker ps`](./screenshots/DH-ps.png)
 
 ---
 
 #### Screenshot 8 — Browser displaying the running React application
 
-Add your screenshot here.
+![Browser displaying the running React application](./screenshots/DH-web.png)
 
 ---
 
