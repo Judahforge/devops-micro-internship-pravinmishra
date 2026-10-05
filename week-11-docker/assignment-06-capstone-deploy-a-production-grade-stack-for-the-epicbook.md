@@ -20,13 +20,13 @@ Explore the `theepicbook` repository, identify its components (UI, API, DB, work
 
 #### Deliverable — `docs/01-architecture-diagram.png`
 
-Add your diagram or link here.
+![`docs/01-architecture-diagram.png`](./screenshots/Artitechure.png)
 
 ---
 
 #### Deliverable — `docs/02-env-and-ports.md`
 
-Add your content or link here.
+![`docs/02-env-and-ports.md`](./screenshots/02-env-and-ports.md.png)
 
 ---
 
@@ -40,8 +40,16 @@ Create minimal multi-stage Dockerfiles for the frontend and backend services, wi
 
 #### Deliverable — `frontend/Dockerfile`, `backend/Dockerfile`, and `.dockerignore` files, with a note on layer optimizations and security benefits
 
-Add your content or link here.
+![Dockerfile](./screenshots/2DF.png)
+![ignore-files](./screenshots/Igrone-files.png)
 
+Build tools are removed from final image.
+
+Only production dependencies are copied.
+
+Non-root user improves security.
+
+Image size reduction: compare docker images before/after.
 ---
 
 # Task 2 — Compose Stack & Networks
@@ -54,7 +62,7 @@ Author `docker-compose.yml` defining the reverse-proxy, frontend, backend, and d
 
 #### Deliverable — `docker-compose.yml`
 
-Add your content or link here.
+![`docker-compose.yml`](./screenshots/docker-compose.png)
 
 ---
 
@@ -68,7 +76,7 @@ Add a database healthcheck, a `/health` endpoint check on the backend, and `depe
 
 #### Deliverable — `docs/03-healthchecks-and-depends-on.md`
 
-Add your content or link here.
+![healthchecks](./screenshots/healthy.png)
 
 ---
 
