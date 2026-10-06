@@ -104,7 +104,7 @@ Run the container mapping port 80, named `static-site`.
 
 #### Screenshot 7 — Terminal showing `docker ps` displaying the running container
 
-![Terminal showing `docker ps` displaying the running container](./screenshots/systemctl%20status.png)
+![Terminal showing `docker ps` displaying the running container](./screenshots/Docker-ps.png)
 
 ---
 
