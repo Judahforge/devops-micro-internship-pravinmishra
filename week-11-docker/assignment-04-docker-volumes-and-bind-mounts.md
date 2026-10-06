@@ -308,7 +308,12 @@ Write a short explanation covering:
 - How Task 2 proved Docker Volume persistence
 - Why Docker Volumes are commonly used for application data
 
-Write your explanation here.
+A **Bind Mount** maps a specific folder or file on the host machine directly into a Docker container. In Task 1, the Nginx logs were stored in the host folder `~/nginx-logs`, and the logs remained available even after the container was removed and recreated. This proved that the data persisted independently of the container.
+
+A **Docker Volume** is storage managed by Docker rather than being tied directly to a specific host folder. In Task 2, the Docker Volume remained available after the container was removed and recreated, proving that the application data persisted independently of the container.
+
+Docker Volumes are commonly used for application data because Docker manages the storage location and lifecycle, making them easier to manage, back up, and reuse across containers. They are especially useful for databases and other applications where data must survive container removal or replacement.
+
 
 ---
 
