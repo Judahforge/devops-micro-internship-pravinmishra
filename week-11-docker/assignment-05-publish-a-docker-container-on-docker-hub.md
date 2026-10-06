@@ -26,7 +26,7 @@ Add a screenshot of Docker Hub showing your newly created public repository:
 my-react-app
 ```
 
-Add your screenshot here.
+![Public Docker Hub Repository](./screenshots/DH-repo.png)
 
 ---
 
@@ -40,7 +40,7 @@ Login Succeeded
 
 Ensure that your full name is visible and that no password, Personal Access Token, or device code is exposed.
 
-Add your screenshot here.
+![Successful Docker Login](./screenshots/Docker-login.png)
 
 ---
 
@@ -54,7 +54,7 @@ docker image ls <YOUR_DOCKERHUB_USERNAME>/my-react-app
 
 The output must show the `latest` tag.
 
-Add your screenshot here.
+![Correctly Tagged Image](./screenshots/tag.png)
 
 ---
 
@@ -68,7 +68,7 @@ docker push <YOUR_DOCKERHUB_USERNAME>/my-react-app:latest
 
 The output must include a pushed status or image digest.
 
-Add your screenshot here.
+![Successful Docker Push](./screenshots/Docker-push.png)
 
 ---
 
@@ -76,7 +76,7 @@ Add your screenshot here.
 
 Add a screenshot of your Docker Hub repository showing the uploaded `latest` image tag.
 
-Add your screenshot here.
+![Published `latest` Tag in Docker Hub](./screenshots/docker-hub-web.png)
 
 ---
 
@@ -88,7 +88,7 @@ Add a screenshot of the terminal showing:
 - Successful `docker pull` output
 - `docker image ls` showing the pulled image
 
-Add your screenshot here.
+![Local Image Removed and Pulled Again](./screenshots/DH-pull.png)
 
 ---
 
@@ -106,7 +106,7 @@ The output must show the running `react-container` with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![Running Pulled Image](./screenshots/DH-ps.png)
 
 ---
 
@@ -120,13 +120,13 @@ http://<YOUR-VM-PUBLIC-IP>
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![React Application in Browser](./screenshots/DH-web.png)
 
 ---
 
 # Docker Hub Repository URL
 
-**Repository URL:** `Add your Docker Hub repository URL here`
+**Repository URL:** `https://hub.docker.com/repository/docker/judahforge/my-react-app/general`
 
 ---
 
@@ -138,7 +138,12 @@ Write a short explanation covering:
 - Why a container registry is useful in DevOps workflows
 - Why production deployments should use versioned image tags instead of relying only on `latest`
 
-Write your explanation here.
+Image tagging is required before pushing an image to Docker Hub because the tag identifies the image and tells Docker which registry and repository it belongs to. For example, tagging an image as `Judahforge/my-react-app:latest` allows Docker to push it to the correct Docker Hub repository.
+
+A container registry is useful in DevOps because it provides a central place to store, manage, and distribute container images. Teams can use registries to share images between developers, CI/CD pipelines, staging environments, and production servers.
+
+Production deployments should use versioned image tags such as `v1.0`, `v1.1`, or `2026.10.06` instead of relying only on `latest`. Versioned tags make deployments predictable and traceable because you know exactly which image version is running. They also make rollbacks easier if a newer version introduces a problem.
+
 
 ---
 
@@ -162,13 +167,13 @@ Include:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/dUQvzsAX`
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![LinkedIn Post Screenshot](./screenshots/Linkedin-Ass05.png)
 
 ---
 
