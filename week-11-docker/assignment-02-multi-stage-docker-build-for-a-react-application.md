@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-![Docker image list showing both image sizes](./screenshots/Image-size.png)
+![Docker image list showing both image sizes](./screenshots/docker-images.png)
 
 ---
 

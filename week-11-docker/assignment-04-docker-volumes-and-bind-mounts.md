@@ -84,7 +84,7 @@ $HOME/nginx-logs
 
 The output must show `access.log`, `error.log`, and an access-log entry created when you opened the Nginx page.
 
-Add your screenshot here.
+![Bind-Mounted Log Files](./screenshots/AS04-Bind-Mounted-Log-Files.png)
 
 ---
 
