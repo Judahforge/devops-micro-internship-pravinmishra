@@ -12,7 +12,7 @@ In this assignment, you will build a read-only Bash script that audits a running
 
 # Target Container
 
-**Target Container Name:** `Add the exact container name here`
+**Target Container Name:** `theepicbook-backend-1`
 
 ---
 
@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![Audit Workspace Files](./screenshots/AS08-Audit-Workspace-Files.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![Docker Audit Skill Available in Claude Code](./screenshots/AS08-docker-audit.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![Script Validation](./screenshots/AS08-Script-Validation.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![Selected Target Container](./screenshots/AS08-Selected-Target-Container.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![Initial Audit Results](./screenshots/AS08-Initial-Audit-Results.png)
 
 ---
 
@@ -119,7 +119,8 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
+![Audit Explanation and Recommended Fix](./screenshots/AS08-Audit-Explanation.png)
+![Audit Explanation and Recommended Fix](./screenshots/AS08-Audit-Explanation1.png)
 
 ---
 
@@ -135,7 +136,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![Hardening Configuration Change](./screenshots/AS08-Hardening-Configuration-Change.png)
 
 ---
 
@@ -143,7 +144,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
+![Updated Service Running](./screenshots/AS08-Updated-Service-Running.png)
 
 ---
 
@@ -163,7 +164,8 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![Final Audit Results](./screenshots/AS08-Final-Audit-Results.png)
+![Final Audit Results](./screenshots/AS08-Final-Audit-Results9B.png)
 
 ---
 
@@ -176,7 +178,73 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+# Before-and-After Comparison
+
+## 1. Initial Audit Finding
+
+The initial Docker security audit flagged the database container (`theepicbook-database-1`) for failing the **Container User** check.
+
+```text
+[WARN] Container user
+Details: The container runs as root or has no non-root user configured.
+```
+
+The `database` service in `docker-compose.yml` did not explicitly configure a non-root user, resulting in the MySQL process running as UID 0 (root).
+
+## 2. Docker Compose Change Applied
+
+The `user: "999:999"` directive was added to the `database` service to run the container as the existing `mysql` service account.
+
+**Before:**
+```yaml
+database:
+  image: mysql:8.0
+  command: --default-authentication-plugin=mysql_native_password
+```
+
+**After:**
+```yaml
+database:
+  image: mysql:8.0
+  user: "999:999"
+  command: --default-authentication-plugin=mysql_native_password
+```
+
+The existing `db_data` volume was already owned by UID/GID `999:999`, so no ownership change was required. The database container was recreated using `docker compose up -d --force-recreate database` and returned to a healthy state within 30 seconds.
+
+## 3. Final Audit Result
+
+After the change, the security audit returned a passing result:
+
+```text
+[PASS] Container user
+Details: Runs as a non-root user: mysql
+```
+
+The container's identity was also verified using `docker exec theepicbook-database-1 id`, which returned:
+
+```text
+uid=999(mysql) gid=999(mysql) groups=999(mysql)
+```
+
+This confirms that the container runs under the `mysql` service account rather than root.
+
+## 4. Security Benefit
+
+Running MySQL as a non-root user follows the **principle of least privilege** by reducing the privileges available to the database process.
+
+The improvement helps limit the potential impact of a compromise by:
+
+1. **Reducing container escape opportunities:** The process does not automatically have root privileges inside the container.
+2. **Limiting access to host-mounted files:** The process has fewer permissions when accessing files outside its own permitted scope.
+3. **Restricting unauthorized system changes:** The non-root account has fewer privileges to modify protected files or system components.
+
+This change does not prevent every attack, but it adds an important layer of defense by reducing the privileges available to a compromised database process.
+
+## Conclusion
+
+The initial audit identified that the database container was running as root. After adding `user: "999:999"` to the Docker Compose configuration, the container ran as the non-root `mysql` user, and the subsequent audit passed the Container User check. This demonstrates a measurable security improvement through the application of least privilege.
+
 
 ---
 
@@ -188,13 +256,13 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** `https://lnkd.in/p/dpJAWWAb`
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![LinkedIn Post Screenshot](./screenshots/AS08-Linkedin.png)
 
 ---
 
