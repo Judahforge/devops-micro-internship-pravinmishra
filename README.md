@@ -141,7 +141,7 @@ Week 04 → Git & GitHub
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Docker | ✅ Solved | ✅ Completed | https://lnkd.in/p/dpJAWWAb | https://medium.com/@oyekunlejude7/ai-assisted-docker-container-hardening-running-mysql-as-non-root-in-docker-compose-09ed84af303b |
+| 11 | Docker | ✅ Solved | ✅ Completed | https://lnkd.in/p/dpJAWWAb | https://medium.com/@oyekunlejude7/ai-assisted-docker-container-hardening-running-mysql-as-non-root-in-docker-compose-09ed84af303b?sharedUserId=oyekunlejude7 |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
