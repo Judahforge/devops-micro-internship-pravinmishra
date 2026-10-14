@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-![Diagram image or link](./screenshots/artitecture1.png7uyyhnn )
+![Diagram image or link](./screenshots/AS06-Architecture-Diagram.png)
 
 ---
 
@@ -34,13 +34,13 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+us-east-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+VPC, Subnets, Internet Gateway, NAT Gateway, Elastic IP, Route Tables, Security Groups, EC2, Application Load Balancer, Target Groups, RDS for MySQL, Multi-AZ, Read Replica, DB Subnet Group, Nginx, Node.js, PM2, Git, CloudWatch optional.
 
 ---
 
@@ -56,7 +56,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`http://book-review-web-alb-1637490299.us-east-1.elb.amazonaws.com/`
 
 ---
 
@@ -70,37 +70,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![Web EC2](./screenshots/AS06-Web-EC2.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![App EC2](./screenshots/AS06-App-EC2.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![Public ALB](./screenshots/AS06-Public-ALB.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![Internal ALB](./screenshots/AS06-Internal-ALB.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![RDS + Replica](./screenshots/AS06-RDS+Replica.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![App UI proof](./screenshots/AS06-App-UI-proof.png)
 
 ---
 
@@ -114,19 +114,29 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The three-tier architecture deployed successfully: Public ALB → Web EC2/Nginx → Internal ALB → App EC2/Node.js → private Multi-AZ RDS MySQL. Target groups showed healthy, PM2 kept both frontend and backend running, and the app loaded through the public ALB DNS.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+App EC2 had no public IP → used Web EC2 as a bastion/jump host.
+
+Nginx showed default page → enabled the book-review site and removed default.
+
+API requests hit wrong path → used proxy_pass without trailing slash to preserve /api/.
+
+Backend stopped after SSH closed → moved to PM2 and enabled PM2 startup with systemd.
+
+Target unhealthy → checked App SG allowed port 3001 from App SG, and backend was running.
+
+CORS errors → added public ALB DNS to ALLOWED_ORIGINS
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS documentation, PM2 docs, Nginx docs, Next.js docs, course notes, curl, pm2 logs, nginx -t, browser DevTools.
 
 ---
 
@@ -142,13 +152,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/dzwZdvTs`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![Screenshot of LinkedIn post](./screenshots/AS06-Linkedin.png)
 
 ---
 
