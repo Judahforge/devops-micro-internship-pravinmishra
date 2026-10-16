@@ -136,12 +136,12 @@ Week 04 → Git & GitHub
 | 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-linux-bash-ugcPost-7483997560722944000-a1qW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/milestone-in-devops-afb2d71da5f8?sharedUserId=oyekunlejude7 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | AWS Cloud | ✅ Solved | ✅ Completed |https://lnkd.in/p/djczhQyY | https://medium.com/@oyekunlejude7/ai-assisted-aws-security-audit-how-i-found-and-fixed-a-real-misconfiguration-in-my-own-account-ea75f0482974 |
+| 06 | AWS Cloud | ✅ Solved | ✅ Completed |https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-aws-agenticai-ugcPost-7516234860517253120-7KKa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/ai-assisted-aws-security-audit-how-i-found-and-fixed-a-real-misconfiguration-in-my-own-account-ea75f0482974 |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Docker | ✅ Solved | ✅ Completed | https://lnkd.in/p/dpJAWWAb | https://medium.com/@oyekunlejude7/ai-assisted-docker-container-hardening-running-mysql-as-non-root-in-docker-compose-09ed84af303b?sharedUserId=oyekunlejude7 |
+| 11 | Docker | ✅ Solved | ✅ Completed | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-docker-containersecurity-ugcPost-7515759929346007040-ma1-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/ai-assisted-docker-container-hardening-running-mysql-as-non-root-in-docker-compose-09ed84af303b?sharedUserId=oyekunlejude7 |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 

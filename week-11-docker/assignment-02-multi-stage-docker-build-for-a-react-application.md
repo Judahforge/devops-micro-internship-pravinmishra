@@ -106,7 +106,7 @@ The multi-stage build reduced the final image size from 2.17 GB to 95 MB, a redu
 
 Optionally configure an Nginx health check, cache headers, parameterized ports via environment variables, or a lighter runtime image, and compare results.
 
-> Screenshot optional.
+![OPTIONAL](./screenshots/AS02-OPtional.png)
 
 ---
 
