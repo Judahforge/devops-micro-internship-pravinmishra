@@ -20,7 +20,7 @@ Create `eb-demo-vnet` (10.0.0.0/16) with `web-subnet` (10.0.1.0/24), `app-subnet
 
 #### Screenshot 1 — Subnet configuration screen showing the three subnets and Bastion subnet (if enabled)
 
-Add your screenshot here.
+![Subnet configuration screen showing the three subnets and Bastion subnet (if enabled)](./screenshots/AS03-subnet.png)
 
 ---
 
@@ -44,7 +44,7 @@ Create Standard Public Load Balancer `web-public-elb` with frontend IP `web-elb-
 
 #### Screenshot 2 — Load Balancer frontend IP configuration
 
-Add your screenshot here.
+![Load Balancer frontend IP configuration](./screenshots/AS03-Frontend-ip-config.png)
 
 ---
 
@@ -58,7 +58,7 @@ Confirm the NGINX default page is reachable through the Load Balancer's public I
 
 #### Screenshot 3 — Browser showing the NGINX welcome page through the Load Balancer Public IP
 
-Add your screenshot here.
+![Browser showing the NGINX welcome page through the Load Balancer Public IP](./screenshots/AS03-loadbalancer-ip.png)
 
 ---
 
