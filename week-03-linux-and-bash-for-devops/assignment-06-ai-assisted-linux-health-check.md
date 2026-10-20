@@ -524,7 +524,7 @@ Paste your LinkedIn post URL here:
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+`https://github.com/Judahforge/devops-micro-internship-pravinmishra/tree/main/week-03-linux-and-bash-for-devops`
 
 ---
 
