@@ -76,8 +76,8 @@ This is not a course. It is an internship-style program — real deployments, re
 Week 02 → Agentic AI with Claude Code
 [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
-<!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+Week 03 → Linux & Bash for DevOps
+[![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
 Week 04 → Git & GitHub 
  [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/)
@@ -133,7 +133,7 @@ Week 04 → Git & GitHub
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved| https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-micro-internship-dmi-by-pravin-activity-7442203473045213184-eDpT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
 | 01 | Success Mindset |  ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_oyekunle-judah-marvellous-building-cloud-activity-7478376736582381569-Y5Ye?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/reflection-week-2-0e4ed13dba6a |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-devops-agenticai-ugcPost-7489078940402163712-8P2H/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | — |
-| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-aws-agenticai-ugcPost-7518426748112547840-MvqJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/ai-assisted-linux-incident-triage-how-i-built-a-read-only-health-check-and-used-claude-code-to-aad239538ea8 |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-linux-bash-ugcPost-7483997560722944000-a1qW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/milestone-in-devops-afb2d71da5f8?sharedUserId=oyekunlejude7 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ✅ Solved | ✅ Completed |https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-aws-agenticai-ugcPost-7516234860517253120-7KKa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/ai-assisted-aws-security-audit-how-i-found-and-fixed-a-real-misconfiguration-in-my-own-account-ea75f0482974 |

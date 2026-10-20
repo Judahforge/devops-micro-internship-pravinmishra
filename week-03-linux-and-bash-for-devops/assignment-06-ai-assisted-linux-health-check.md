@@ -267,7 +267,8 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-![`/linux-triage` output for the healthy server](./screenshots)
+![`/linux-triage` output for the healthy server](./screenshots/AS06-linux-triage.png)
+![`/linux-triage` output for the healthy server](./screenshots/AS06-linux-triage1.png)
 
 ---
 
@@ -311,19 +312,20 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+![Output showing Nginx is inactive and the HTTP request fails](./screenshots/AS06-nginx-inactive.png)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
+![`/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command](./screenshots/AS06-linux-triagef.png)
+![`/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command](./screenshots/AS06-linux-triagef1.png)
 
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+![`incident-failure-report.txt` showing the failed checks and your Full Name](./screenshots/AS06-incident-failure-report.txt.png)
 
 ---
 
@@ -371,25 +373,25 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+![Output showing Nginx is active and `curl -I http://localhost` returns 200 OK](./screenshots/AS06-Manual-fix.png)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+![Second `/linux-triage` output showing successful recovery with no FAIL results](./screenshots/AS06-Slinux-triage.png)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+![Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`](./screenshots/AS06-ls-lah-reports.png)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+![`incident-summary.md` showing all required sections and your Full Name](./screenshots/AS06-cat-incident-summary.md.png)
 
 ---
 
@@ -437,7 +439,7 @@ Fill in all seven sections below in your own words.
 
 **Full Name:** Judah Oyekunle
 
-**Date:** DD/10/2026
+**Date:** 20/10/2026
 
 ---
 
@@ -508,13 +510,13 @@ The AI skill was allowed to gather evidence and analyze it, but not to restart N
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/duMHpSxH`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Published LinkedIn post](./screenshots/AS06-Linkedin.png)
 
 ---
 
