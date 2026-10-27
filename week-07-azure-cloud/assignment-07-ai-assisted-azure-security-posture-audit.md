@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![`az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)](./screenshots/AS07-Task1-Resources.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![`CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules](./screenshots/AS07-Task2-CLAUDE.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![Claude Code showing the four-check plan, with no files created or modified](./screenshots/AS07-Task3-Plan.png)
 
 ---
 
@@ -62,13 +62,14 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![Your script open in your editor, showing the check functions and the `az` commands they call](./screenshots/AS07-Task4-Script-a.png)
+![Your script open in your editor, showing the check functions and the `az` commands they call](./screenshots/AS07-Task4-Script-b.png)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
+![Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable](./screenshots/AS07-Task5-Syntax-Executable.png)
 
 ---
 
@@ -82,7 +83,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result](./screenshots/AS07-Script-output.png)
 
 ---
 
@@ -96,13 +97,14 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![Your skill file's frontmatter showing `allowed-tools` without `Write`](./screenshots/AS07-Task7-Skill-Frontmatter.png)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
+![`/azure-audit` output showing the baseline findings and Claude's explanation](./screenshots/AS07-Task8-Skill-Output-a.png)
+![`/azure-audit` output showing the baseline findings and Claude's explanation](./screenshots/AS07-Task8-Skill-Output-b.png)
 
 ---
 
@@ -116,19 +118,19 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![Saved report showing the original finding before the fix](./screenshots/AS07-Task9-Before-Fix.png)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![Terminal output of the remediation command you ran yourself](./screenshots/AS07-Task10-Remediation.png)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+![Second `/azure-audit` run (or report) showing the finding resolved](./screenshots/AS07-Task11-After-Fix.png)
 
 ---
 
@@ -136,7 +138,27 @@ Add your screenshot here.
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+Notes — Comparing the Azure Audit to the Week 6 AWS Audit
+
+Finding categories map 1:1 across the two clouds. The same four classes of misconfiguration I checked in AWS came back in Azure, just under different resource names:
+
+- Security Group ingress rule allowing 0.0.0.0/0 on port 22 (SSH) or 3389 (RDP) → NSG inbound Allow rule with sourceAddressPrefix of "*", "Internet", or "0.0.0.0/0" on port 22/3389. Same risk: a login service exposed to the entire internet, open to brute force.
+- S3 bucket with Block Public Access off / public ACL or bucket policy → Storage Account with allowBlobPublicAccess set to true. Same risk: anonymous read of object data, a classic cloud data-leak vector.
+- EBS volume with Encrypted: false (or no KMS key) → Managed disk with encryption.type not starting with EncryptionAtRest. Same risk: unencrypted data at rest, exposed to disk theft or snapshot copy.
+- RDS instance with PubliclyAccessible: true → MySQL Flexible Server with network.publicNetworkAccess set to Enabled. Same risk: the database engine (3306) reachable from the internet, open to credential brute force and MySQL exploitation.
+
+The remediation that produces the fix is also structurally identical: restrict the ingress source to a single IP (<my-ip>/32) in AWS, restrict the NSG sourceAddressPrefix to <my-ip>/32 in Azure.
+
+What stayed exactly the same about the workflow — and this is the real lesson — is that the aws and az commands share almost nothing verb-for-verb (describe-* vs show/list, authorize-security-group-ingress vs az network nsg rule update), but the discipline is cloud-agnostic:
+
+1. Read-only evidence gathering first. Both scripts touch only describe/list/show verbs. No mutating call is ever automated.
+2. The Agentic Loop is the same shape. Gather → Analyze → Recommend → Human Acts → Verify. Both weeks produce the same PASS/WARN/FAIL report structure with the same three exit codes (0 healthy, 1 warn, 2 fail).
+3. Claude is constrained by allowed-tools, not by trust. Both skills exclude Write and Edit from the tool list, so even a prompt-injected instruction could not make Claude modify a file or a resource. The security boundary is enforced by what tools exist, not by what the model promises.
+4. The human runs the fix. In both weeks I executed the remediation myself in a regular terminal — Week 6 to rewrite a Security Group ingress, Week 7 to narrow Allow-SSH-MyIP to 105.127.9.91/32. Claude proposed the exact command; I reviewed and ran it.
+5. Fail → fix → pass, evidenced three ways. Both assignments require saving before-fix and after-fix reports so the delta is provable, not asserted.
+6. Rule and resource names come from evidence, not guesses. In Week 7 Claude's remediation command carried the actual rule name (Allow-SSH-MyIP) sourced from the audit report, not a generic "SSH" — the same requirement as Week 6, where the security group ID had to be pasted from describe-security-groups rather than invented.
+
+Where the two audits genuinely diverge is in the plumbing, and Week 7 surfaced a cloud-specific trap. Azure stores an NSG rule's source in either sourceAddressPrefix (singular, for one entry) or sourceAddressPrefixes (plural, for a list) depending on how the rule was created — so the verification query I ran after the fix initially showed an empty Source column because I queried the wrong field. AWS normalizes the equivalent to a single IpRanges array, so this pitfall does not exist there. Similarly, Azure's NSG can attach at the subnet or the NIC, whereas an AWS Security Group attaches to the resource directly; and Azure managed disk encryption has three tiers (Platform, Customer, Platform+Customer) while AWS EBS only distinguishes encrypted versus not (plus optional KMS). The read-only-then-human-fixes pattern, the PASS/WARN/FAIL contract, and the exit-code discipline carried over unchanged. Only the nouns changed.
 
 ---
 

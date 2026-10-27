@@ -88,8 +88,8 @@ Week 04 → Git & GitHub
  Week 06 → AWS Cloud 
 [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) 
 
-<!-- Week 07 → Azure Cloud -->
-<!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
+ Week 07 → Azure Cloud 
+  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) 
 
 <!-- Week 08 → Terraform -->
 <!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
@@ -137,7 +137,7 @@ Week 04 → Git & GitHub
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_devops-linux-bash-ugcPost-7483997560722944000-a1qW/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/milestone-in-devops-afb2d71da5f8?sharedUserId=oyekunlejude7 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ✅ Solved | ✅ Completed |https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-aws-agenticai-ugcPost-7516234860517253120-7KKa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/ai-assisted-aws-security-audit-how-i-found-and-fixed-a-real-misconfiguration-in-my-own-account-ea75f0482974 |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | ✅ Solved | ✅ Completed | https://www.linkedin.com/posts/judah-oyekunle-devops-engineer_dmibypravinmishra-aws-agenticai-ugcPost-7520866943688695808-DAC4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1QcSsBayL-iIJCb39J7WoJCnjtf7N2fMA | https://medium.com/@oyekunlejude7/how-i-built-a-three-tier-azure-app-then-audited-my-own-cloud-with-claude-code-5ac1754cc799 |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
