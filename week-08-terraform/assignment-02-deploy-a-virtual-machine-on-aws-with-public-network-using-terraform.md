@@ -24,7 +24,7 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Ensure that your full name is visible and that no AWS credentials, account IDs, or other sensitive information are exposed.
 
-Add your screenshot here.
+![Terminal showing successful `aws --version` output](./screenshots/AS02-aws-version.png)
 
 ---
 
@@ -54,7 +54,7 @@ The configuration must include:
 
 #### Screenshot 2 — VS Code showing the AWS provider configuration and VPC configuration in `main.tf`
 
-Add your screenshot here.
+![VS Code showing the AWS provider configuration and VPC configuration in `main.tf`](./screenshots/AS02-Main.tf.png)
 
 ---
 
@@ -62,7 +62,7 @@ Add your screenshot here.
 
 Ensure that no AWS credentials, private keys, account IDs, or other sensitive information are visible.
 
-Add your screenshot here.
+![VS Code showing the EC2 instance configuration and public IP `output` block in `main.tf`](./screenshots/AS02-Ec2-Config.png)
 
 ---
 
@@ -76,7 +76,7 @@ Initialize the Terraform working directory and download the required provider co
 
 #### Screenshot 4 — Terminal showing the successful `terraform init` output
 
-Add your screenshot here.
+![Terminal showing the successful `terraform init` output](./screenshots/AS02-TF-init.png)
 
 ---
 
@@ -90,19 +90,19 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 #### Screenshot 5 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
+![Terraform plan summary showing the proposed resources](./screenshots/AS02-TF-plan.png)
 
 ---
 
 #### Screenshot 6 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![Terraform apply output showing successful completion](./screenshots/AS02-TF-Apply.png)
 
 ---
 
 #### Screenshot 7 — Terraform output showing the public IP address of the EC2 instance
 
-Add your screenshot here.
+![Terraform output showing the public IP address of the EC2 instance](./screenshots/AS02-Terraform-output.png)
 
 ---
 
@@ -110,7 +110,7 @@ Add your screenshot here.
 
 Record the public IP address displayed by `terraform output`.
 
-**EC2 Public IP Address:** `Add the public IP address here`
+**EC2 Public IP Address:** `3.219.216.121`
 
 ---
 
@@ -132,13 +132,13 @@ Confirm that:
 
 #### Screenshot 8 — AWS CLI output showing the EC2 instance ID, `running` state, and public IP address
 
-Add your screenshot here.
+![AWS CLI output showing the EC2 instance ID, `running` state, and public IP address](./screenshots/AS02-TF-Ec2.png)
 
 ---
 
 #### Screenshot 9 — Browser showing the Nginx page successfully loaded using the EC2 instance public IP
 
-Add your screenshot here.
+![Browser showing the Nginx page successfully loaded using the EC2 instance public IP](./screenshots/AS02-Nginx-web.png)
 
 ---
 
@@ -152,7 +152,7 @@ Remove all AWS resources created by Terraform after completing the deployment an
 
 #### Screenshot 10 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![Terminal showing successful `terraform destroy` completion](./screenshots/AS02-TF-destroy.png)
 
 ---
 
@@ -166,7 +166,7 @@ Share your AWS Terraform deployment progress by using either Facebook or WhatsAp
 
 #### Screenshot 11 — Published Facebook post/Story or WhatsApp Status showing Terraform deployment progress and DMI Leaderboard progress link
 
-Add your screenshot here.
+![Published Facebook post/Story or WhatsApp Status showing Terraform deployment](./screenshots/AS02-Whatsapp-post.png)
 
 > Use Screenshot 6 — successful `terraform apply` output — as the assignment image for your post or Status. Ensure that no AWS credentials, private keys, account IDs, private phone numbers, or personal messages are visible.
 
