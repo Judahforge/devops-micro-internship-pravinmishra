@@ -24,7 +24,7 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+![Terraform Version](./screenshots/AS03-Terraform-Version.png)
 
 ---
 
@@ -32,7 +32,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `az version` output.
 
-Add your screenshot here.
+![Azure CLI Version](./screenshots/AS03-Azure-CLI-Version.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add your screenshot here.
 
 Add a screenshot of the VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+![HashiCorp Terraform Extension](./screenshots/AS03-Terraform-Extension.png)
 
 ---
 
@@ -80,7 +80,7 @@ The `cloud-init.sh` file must contain the complete automated React application d
 
 Add a screenshot of VS Code showing the AzureRM provider, resource group, and Network Security Group configuration in `main.tf`.
 
-Add your screenshot here.
+![Provider, Resource Group, and Network Security Group](./screenshots/AS03-Task1-Provider-RG-NSG.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a screenshot of VS Code showing the Linux virtual machine configuration, inc
 
 Ensure that passwords, private keys, account IDs, access tokens, and other sensitive information are hidden.
 
-Add your screenshot here.
+![Linux Virtual Machine and `custom_data`](./screenshots/AS03-Task1-VM-CustomData.png)
 
 ---
 
@@ -100,7 +100,7 @@ Add a screenshot of VS Code showing the completed `cloud-init.sh` deployment scr
 
 Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or other sensitive information are visible.
 
-Add your screenshot here.
+![Completed `cloud-init.sh`](./screenshots/AS03-Task1-CloudInit-Script.png)
 
 ---
 
@@ -108,7 +108,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the public IP `output` block in `main.tf`.
 
-Add your screenshot here.
+![Public IP Output Block](./screenshots/AS03-Task1-PublicIP-Output.png)
 
 ---
 
@@ -124,7 +124,7 @@ Initialize the Terraform working directory and download the required provider co
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+![Terraform Initialization](./screenshots/AS03-Task2-Terraform-Init.png)
 
 ---
 
@@ -140,7 +140,7 @@ Review the Terraform execution plan and provision the Azure infrastructure.
 
 Add a screenshot showing the Terraform plan summary and the proposed resources.
 
-Add your screenshot here.
+![Terraform Plan](./screenshots/AS03-Task3-Terraform-Plan.png)
 
 ---
 
@@ -148,7 +148,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![Terraform Apply](./screenshots)
 
 ---
 
@@ -156,13 +156,13 @@ Add your screenshot here.
 
 Add a screenshot showing the VM public IP address returned by `terraform output`.
 
-Add your screenshot here.
+![VM Public IP Output](./screenshots/AS03-Task3-Public-IP.png)
 
 ## VM Public IP Address
 
 Record the public IP address displayed by `terraform output`.
 
-**VM Public IP Address:** Add the VM public IP address here
+**VM Public IP Address:** "20.109.188.230"
 
 ---
 
@@ -178,7 +178,7 @@ Connect to the Azure Linux virtual machine and confirm that the cloud-init/user 
 
 Add a screenshot of SSH terminal showing successful connection to the Azure VM and evidence that the React application deployment completed such as the deployed files in `/var/www/html` or successful cloud-init output.
 
-Add your screenshot here.
+![SSH Connection and Completed React Deployment](./screenshots/AS03-Task4-SSH-CloudInit.png)
 
 ---
 
@@ -186,7 +186,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing that the Nginx service is running successfully.
 
-Add your screenshot here.
+![Nginx Service Status](./screenshots/AS03-Task4-Nginx-Status.png)
 
 ---
 
@@ -204,7 +204,7 @@ Add a screenshot of the browser showing the deployed React application successfu
 
 Ensure that the Azure VM public IP is visible in the browser address bar.
 
-Add your screenshot here.
+![React Application in the Browser](./screenshots/AS03-Task5-React-App.png)
 
 ---
 
@@ -220,7 +220,7 @@ Remove all Azure resources created by Terraform after completing the application
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+![Terraform Destroy](./screenshots/AS03-Task6-Terraform-Destroy.png)
 
 ---
 
@@ -261,7 +261,7 @@ Add a screenshot of your published LinkedIn post showing:
 
 Ensure that no passwords, private keys, account IDs, access tokens, or other sensitive information are visible.
 
-Add your screenshot here.
+![LinkedIn Post](./screenshots/AS03-Task7-LinkedIn-Post.png)
 
 ---
 
